@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#101014">
+<link rel="manifest" href="manifest.json">
+<title>Neon City</title>
+<style>
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#111;color:white;font-family:Arial,sans-serif;touch-action:none}
+canvas{display:block;width:100%;height:100%;background:#182018}
+#hud{position:fixed;top:12px;left:12px;z-index:3;background:#0009;padding:10px 14px;border-radius:12px}
+#mission{position:fixed;top:12px;left:50%;transform:translateX(-50%);z-index:3;background:#000b;padding:10px 16px;border-radius:12px;text-align:center;max-width:70%}
+#stick{position:fixed;left:18px;bottom:24px;width:140px;height:140px;border-radius:50%;background:#fff3;border:2px solid #fff6;z-index:4}
+#knob{position:absolute;left:45px;top:45px;width:50px;height:50px;border-radius:50%;background:#fff9}
+.btn{position:fixed;z-index:4;width:72px;height:72px;border-radius:50%;border:2px solid #fff6;background:#fff3;color:#fff;font-size:20px}
+#e{right:115px;bottom:42px}#f{right:28px;bottom:120px}#q{right:28px;bottom:35px}
+</style>
+</head>
+<body>
+<canvas id="game"></canvas>
+<div id="hud">💰 $2,500 &nbsp; ⭐ <span id="stars">0</span></div>
+<div id="mission">MISSION 1<br>Gehe zum gelben Marker</div>
+<div id="stick"><div id="knob"></div></div>
+<button class="btn" id="e">E</button><button class="btn" id="f">🚗</button><button class="btn" id="q">⭐</button>
+<script src="game.js"></script>
+</body></html>
